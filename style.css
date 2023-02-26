@@ -1,3 +1,12 @@
+body {
+    --red-color:#e65f78;
+}
+/* Pour alterner les couleurs gris noir dans le fond d'écran 1 section sur 2 seront grises */
+.mainContentWebsite section:nth-child(2n){
+    background-color: #2e3135;
+}
+/* fin alternace couleur */
+
 #firstRowHomepage {
     min-height: 100vh;
     background-image: url(/image/fondlego.jpg);
@@ -54,7 +63,7 @@
     }
 
 .aboutSpan{
-    color:#e65f78;
+    color: var(--red-color);
 }
 
 
@@ -71,7 +80,7 @@
 }
 
 .listIcon li a:hover{
-    color:#e65f78;
+    color: var(--red-color);
     transition: 0.35s;
 }
 
@@ -81,14 +90,36 @@
     margin: auto;
 }
 
-#about{
-    background-color: #2e3135;
-}
+
 
 a.nav-link.active {
-    color : #e65f78 !important;
-} ;
+    color : var(--red-color) !important;
+}
 
 #navbarSite {
     transition: 0.5s;
+}
+
+
+.btn-custom {
+    background-color: var(--red-color);
+    color: white;
+}
+
+.img-thumbnail {
+    background-color: #596064;
+    border: #6a6c6e;
+}
+
+.temoignage-text{
+    color:#a0a0ac;
+}
+
+.testimonialIcon {
+    font-size: 30px;
+    color: var(--red-color);
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: var(--red-color);
 }
