@@ -6,39 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 
     <title>Portfolio Bootstrap</title>
 </head>
-<body class="bg-dark text-light">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
-            <div class="container-fluid">
+
+<body class="bg-dark text-light" data-bs-spy="scroll" data-bs-target="#navbarSite" data-bs-smooth-scroll="true" tabindex="0">
+
+    <!-- Barre de navigation -->
+    <header >
+        <nav id="navbarSite" class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
                 <a class="navbar-brand ms-5" href="#">
-                    <i class="bi bi-pc-display"></i> FredL
+                    <i class="bi bi-pc-display"></i> Fred L
                 </a>
-                <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                <button class="navbar-toggler ms-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active  " aria-current="page" href="#">Home</a>
-                        <a class="nav-link " href="#">Features</a>
-                        <a class="nav-link " href="#">Pricing</a>
-                        <a class="nav-link me-5 disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#acceuil">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#about">Qui suis-je?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#compétences">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#about">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#about">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#about">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
-
+    
     <main>
-        <!-- A propos section 1-->
-        <section>
-            <div class="container-fluid">
+        <!-- Acceuil section 1-->
+        <section id="acceuil">
+            <div class="container-fluid" >
                 <div class="row row-cols-1" id="firstRowHomepage">
                     <div class="d-flex justify-content-center flex-column text-center" id="textPresentation">
                         <h3 class="firstTitle">Bienvenu !</h3>
@@ -60,23 +77,23 @@
         </section>
 
         <!-- qui suis-je section 2-->
-        <section >
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-2 align-items-center pb-5 pt-5 mt-5 mb-5" id="about">
+        <section class="py-5" id="about">
+            <div class="container" >
+                <div class="row row-cols-1 row-cols-md-2 align-items-center pb-5 pt-5 mb-5" >
                     <div>
-                        <img class="containImage img-thumbnail" src="image/image2.jpg" alt="photoperso">
+                        <img class="img-thumbnail" src="image/image2.jpg" alt="photoperso" style="max-width: 100%">
                     </div>
                     <div class="pt-2 pb-2 text-center text-md-start">
                         <h2>A propos de moi</h2>
-                        <h4>Salut! Je suis <span class="text-danger">Frédéric LANNES</span></h4>
+                        <h4>Salut! Je suis <span class="aboutSpan">Frédéric LANNES</span></h4>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident praesentium eum molestias
                             ducimus, harum ut
-                            mollitia vero reprehenderit nam sint exercitationem odio! Sequi adipisci voluptatum sapiente nemo amet vitae ex.
+                            mollitia vero reprehenderit nam sint exercitationem odio! Sequi adipisci amet vitae ex.
                             Quibusdam consectetur error in, nesciunt delectus laborum dolorem doloremque asperior.
                             <br>
                             <br>
-                            Incidunt maxime optio aut, mollitia iusto accusamus magni doloremque fugit illum modi numquam repellat molestiae
+                            Incidunt maxime optio aut, mollitia iusto accusamus magni doloremque fugit illu numquam repellat molestiae
                             sapiente. Quis nemo esse, veritatis eaque reiciendis fuga hic. Incidunt minima quod eos alias corporis!
                             <br>
                             <br>
@@ -113,7 +130,7 @@
         </section>
 
         <!-- Mes compétences section 3-->
-        <section>
+        <section class="py-5" id="compétences">
             <div class="container">
                 <div class="row text-center mt-5 mb-5">
                     <h2>Mes comptences</h2>
@@ -220,6 +237,7 @@
             </div>
         </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,9 +1,7 @@
 #firstRowHomepage {
     min-height: 100vh;
     background-image: url(/image/fondlego.jpg);
-    background-position: center;
-    /* background-size: cover;
-    background-repeat: no-repeat; */
+    background-position: center;    
 }
 
 #textPresentation {
@@ -34,7 +32,6 @@
     rotate: 180deg; 
 }
 
-
 #mouse i {
     display: block;
     height: 125px;
@@ -56,9 +53,9 @@
         100% { transform:translateY(0%); }
     }
 
-.containImage {
-    max-width: 100%;
-} 
+.aboutSpan{
+    color:#e65f78;
+}
 
 
 .listIcon li a{
@@ -70,6 +67,12 @@
     border: 2px solid ;
     border-radius: 50%;
     line-height: 35px;
+    color:#596064;
+}
+
+.listIcon li a:hover{
+    color:#e65f78;
+    transition: 0.35s;
 }
 
 .card-img-top {
@@ -78,5 +81,14 @@
     margin: auto;
 }
 
+#about{
+    background-color: #2e3135;
+}
 
+a.nav-link.active {
+    color : #e65f78 !important;
+} ;
 
+#navbarSite {
+    transition: 0.5s;
+}
