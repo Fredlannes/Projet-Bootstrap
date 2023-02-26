@@ -106,6 +106,8 @@ a.nav-link.active {
     color: white;
 }
 
+
+
 .img-thumbnail {
     background-color: #596064;
     border: #6a6c6e;
@@ -122,4 +124,18 @@ a.nav-link.active {
 
 .carousel-indicators [data-bs-target]{
     background-color: var(--red-color);
+}
+
+#scrollTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--red-color);
+    opacity: 0.8;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+#scrollTopButton.show{
+    visibility: visible;
 }
